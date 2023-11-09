@@ -1,0 +1,53 @@
+<!-- What is HTTP?
+Hyper Text Transfer Protocol. Set of rules on how browsers and servers communicate
+
+What is URL?
+Uniform Resource Locator. An address for an internet resource.
+
+What is DNS?
+Domain Name System. Converts hostname to IP Address for lookup (like a phonebook for the web)
+
+What is a Query String?
+Specifies extra info as part of the URL. Begins with a question mark.  Request is sent to server and
+it responds.
+
+List two HTTP Verbs and their use cases.
+GET - get some data from the server 
+POST - send some data to the server. A request with side effects that changes data on server.
+
+What is an HTTP request? 
+Request from client to server which follows HTTP protocol 
+
+HTTP header?
+Headers provide additional info about the request or the response.
+Request headers: Host, User-Agent 
+Response Headers: Last-Modified 
+
+What happens when you type a URL in a browser?
+The browser turns the hostname into an IP address using DNS. Browser then makes a request to that 
+IP address. The server then responds and will respond with a code depending on its condition (200 is 
+ok, 404 is an error).  The browser will then find any other resources the page provides and puts it
+in a DOM. The browser will make separate HTTP requests for each of those resources and will receive
+a response for each from the server. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div class="main-form">
+        <label for="Name">Enter Your Name</label>
+        <input type="text" id="name">
+    </div>
+    <div class="main-form">
+        <label for="Email">Enter Your Email</label>
+        <input type="text" id="Email">
+    </div>
+    <button type="submit" id="submission">Submit</button>
+    </form>
+</body>
+</html>
